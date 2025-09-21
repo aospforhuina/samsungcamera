@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="top" android:id="@id/zoom_slider_rounded_background_dark" android:height="@dimen/zoom_group_slider_height" android:width="@dimen/zoom_group_slider_width">
+        <shape>
+            <corners android:radius="@dimen/zoom_group_slider_rounded_background_radius" />
+            <solid android:color="@color/zoom_button_background_dark" />
+        </shape>
+    </item>
+</layer-list>

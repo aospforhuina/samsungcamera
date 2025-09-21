@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.app.camera.layer.previewoverlay.aeaf.trackingaf.TrackingAfView android:id="@id/tracking_af_view" android:tag="layout/preview_overlay_ae_af_0" android:background="@drawable/camera_af_tracking" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+    <ImageView android:id="@id/focus_guide" android:tag="layout/preview_overlay_ae_af_1" android:visibility="gone" android:layout_width="@dimen/ae_af_focus_guide_size" android:layout_height="@dimen/ae_af_focus_guide_size" android:contentDescription="@null" />
+    <com.sec.android.app.camera.layer.previewoverlay.aeaf.DivideAeAfGroup android:id="@id/divide_ae_af" android:tag="layout/preview_overlay_ae_af_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.sec.android.app.camera.layer.previewoverlay.aeaf.DivideAeAfGroup android:id="@id/divide_ae" android:tag="layout/preview_overlay_ae_af_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.sec.android.app.camera.layer.previewoverlay.aeaf.AeAfGroup android:id="@id/ae_af_group" android:tag="layout/preview_overlay_ae_af_4" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

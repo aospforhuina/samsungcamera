@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/RobotoMedium" android:textSize="@dimen/hdr_option_sub_header_text_size" android:textColor="@color/hdr_option_sub_header_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/subTitleViewVideo" android:paddingTop="@dimen/hdr_option_description_top_padding" android:paddingBottom="@dimen/hdr_option_description_bottom_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/SM_VIDEO" android:maxLines="1" android:paddingStart="@dimen/hdr_option_description_side_padding" android:paddingEnd="@dimen/hdr_option_description_side_padding" />
+</LinearLayout>

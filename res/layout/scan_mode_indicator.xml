@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/night_time_layout" android:layout_width="fill_parent" android:layout_height="@dimen/scan_mode_indicator_group_height">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/select_indicator_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/select_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="@dimen/scan_mode_indicator_select_background_margin" />
+            <TextView android:textSize="@dimen/scan_mode_indicator_text_size" android:textColor="@color/scan_mode_indicator_normal_font_color" android:gravity="center" android:id="@id/scan_text_view" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/scan_mode_indicator_text_view_min_width" android:text="@string/scan" android:paddingStart="@dimen/scan_mode_indicator_text_padding_size" android:paddingEnd="@dimen/scan_mode_indicator_text_padding_size" android:layout_alignParentStart="true" style="@style/RobotoMedium" />
+            <TextView android:textSize="@dimen/scan_mode_indicator_text_size" android:textColor="@color/scan_mode_indicator_normal_font_color" android:gravity="center" android:id="@id/extract_text_view" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/scan_mode_indicator_text_view_min_width" android:text="@string/extract_text" android:paddingStart="@dimen/scan_mode_indicator_text_padding_size" android:paddingEnd="@dimen/scan_mode_indicator_text_padding_size" android:layout_alignParentEnd="true" style="@style/RobotoMedium" />
+            <ImageView android:id="@id/new_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/scan_mode_indicator_new_badge_top_margin" android:src="@drawable/ic_notification_badge" android:scaleType="centerCrop" android:contentDescription="@null" android:layout_alignStart="@id/extract_text_view" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/winset_list_item_top_padding" android:paddingBottom="@dimen/winset_list_item_top_padding" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceListItem" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watermark_alignment" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="?android:listPreferredItemPaddingStart" android:layout_toStartOf="@id/alignment_container" android:layout_alignParentStart="true" />
+    <LinearLayout android:id="@id/alignment_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/winset_list_item_margin" android:layout_marginRight="@dimen/winset_list_item_margin" android:layout_centerVertical="true" android:layoutDirection="ltr" android:layout_marginEnd="@dimen/winset_list_item_end_padding" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/alignment_left" android:layout_width="@dimen/watermark_alignment_icon_size" android:layout_height="@dimen/watermark_alignment_icon_size" android:src="@drawable/ic_alignment_left" android:layout_marginEnd="@dimen/watermark_alignment_icon_margin" />
+        <ImageView android:id="@id/alignment_middle" android:layout_width="@dimen/watermark_alignment_icon_size" android:layout_height="@dimen/watermark_alignment_icon_size" android:src="@drawable/ic_alignment_middle" android:layout_marginEnd="@dimen/watermark_alignment_icon_margin" />
+        <ImageView android:id="@id/alignment_right" android:layout_width="@dimen/watermark_alignment_icon_size" android:layout_height="@dimen/watermark_alignment_icon_size" android:src="@drawable/ic_alignment_right" />
+    </LinearLayout>
+</RelativeLayout>

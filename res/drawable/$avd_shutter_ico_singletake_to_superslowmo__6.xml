@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="66" android:valueFrom="62" android:valueTo="62" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$avd_shutter_ico_singletake_to_superslowmo__7" android:duration="150" android:valueFrom="62" android:valueTo="102" android:propertyName="translateX" />
+    </set>
+</set>

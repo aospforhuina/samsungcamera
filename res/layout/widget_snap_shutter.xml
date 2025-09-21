@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/snap_shutter_item_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/normal_center_image" android:background="@drawable/fun_shutter_item_background_focused" android:layout_width="@dimen/base_menu_center_button_area_size" android:layout_height="@dimen/base_menu_center_button_area_size" android:hapticFeedbackEnabled="false" android:contentDescription="@string/take_picture_button" />
+    <View android:layout_gravity="center" android:id="@id/snap_lens_ultra_wide_indicator" android:background="@drawable/ic_uw" android:visibility="invisible" android:layout_width="@dimen/base_menu_center_button_area_size" android:layout_height="@dimen/base_menu_center_button_area_size" />
+</FrameLayout>

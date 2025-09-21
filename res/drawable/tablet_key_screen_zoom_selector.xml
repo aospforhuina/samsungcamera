@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <level-list>
+            <item android:drawable="@drawable/ic_camera_lens_ic_standard_focused_l" android:maxLevel="0" />
+            <item android:drawable="@drawable/ic_camera_lens_ic_ultrawide_focused_l" android:maxLevel="1" />
+            <item android:drawable="@drawable/ic_camera_lens_ic_tele_focused_l" android:maxLevel="2" />
+        </level-list>
+    </item>
+    <item>
+        <level-list>
+            <item android:drawable="@drawable/ic_camera_lens_ic_standard_l" android:maxLevel="0" />
+            <item android:drawable="@drawable/ic_camera_lens_ic_ultrawide_l" android:maxLevel="1" />
+            <item android:drawable="@drawable/ic_camera_lens_ic_tele_l" android:maxLevel="2" />
+        </level-list>
+    </item>
+</selector>

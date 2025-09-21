@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="top" android:id="@id/rounded_background_light" android:height="@dimen/pro_wheel_list_group_rounded_background_height" android:width="@dimen/pro_wheel_list_group_width_vertical">
+        <shape>
+            <corners android:radius="@dimen/pro_wheel_list_group_rounded_background_radius" />
+            <solid android:color="@color/pro_slider_rounded_background_ripple_color" />
+        </shape>
+    </item>
+</layer-list>

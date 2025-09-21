@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/scan_capture_button_layout" android:tag="layout/smart_scan_capture_button_0" android:layout_width="wrap_content" android:layout_height="@dimen/smart_scan_capture_button_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/scan_capture_start_view" android:layout_width="@dimen/smart_scan_capture_button_layout_margin" android:layout_height="fill_parent" />
+    <View android:id="@id/scan_capture_end_view" android:layout_width="@dimen/smart_scan_capture_button_layout_margin" android:layout_height="fill_parent" android:layout_toEndOf="@id/scan_capture_button_background" />
+    <RelativeLayout android:id="@id/scan_capture_button_background" android:background="@drawable/smart_scan_capture_button_background" android:layout_width="wrap_content" android:layout_height="@dimen/smart_scan_capture_button_size" android:layout_centerVertical="true" android:layout_toEndOf="@id/scan_capture_start_view">
+        <ImageView android:layout_gravity="center" android:id="@id/scan_capture_button_image" android:layout_width="@dimen/smart_scan_capture_button_image_size" android:layout_height="@dimen/smart_scan_capture_button_image_size" android:src="@drawable/ic_camera_scan_text_t" android:layout_centerVertical="true" android:layout_marginStart="@dimen/smart_scan_capture_button_image_left_margin" />
+        <TextView android:textAppearance="@style/SmartScanCaptureButtonText" android:ellipsize="marquee" android:id="@id/scan_capture_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/smart_scan_capture_button_text_max_width" android:text="@string/scan_button" android:maxLines="1" android:layout_toRightOf="@id/scan_capture_button_image" android:layout_centerVertical="true" android:layout_marginStart="@dimen/smart_scan_capture_button_text_left_margin" android:layout_marginEnd="@dimen/smart_scan_capture_button_text_right_margin" />
+    </RelativeLayout>
+</RelativeLayout>

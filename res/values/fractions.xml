@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="about_page_bottom_margin">4.999995%</fraction>
+    <fraction name="about_page_button_width">75.0%</fraction>
+    <fraction name="about_page_mid_margin">8.599997%</fraction>
+    <fraction name="about_page_top_margin">7.0000052%</fraction>
+    <fraction name="bottom_guide_line_landscape">87.0%</fraction>
+    <fraction name="create_my_filter_pop_over_bottom_margin_factor">3.6000013%</fraction>
+    <fraction name="create_my_filter_pop_over_height_factor">56.299995%</fraction>
+    <fraction name="create_my_filter_pop_over_side_margin_factor">3.700006%</fraction>
+    <fraction name="create_my_filter_pop_over_width_factor">45.000004%</fraction>
+    <fraction name="key_screen_bottom_area_height">42.799995%</fraction>
+    <fraction name="key_screen_bottom_area_vertical_bias">68.6%</fraction>
+    <fraction name="key_screen_bottom_area_width">10.800004%</fraction>
+    <fraction name="popupview_resizable_ratio">85.0%</fraction>
+    <fraction name="quick_setting_guide_line_landscape">11.600006%</fraction>
+    <fraction name="selfie_tone_bottom_base_line_tablet">72.5%</fraction>
+    <fraction name="shooting_mode_overlay_floating_shutter_button_default_percent_pos_delta_y">26.499998%</fraction>
+    <fraction name="shooting_mode_overlay_floating_shutter_button_default_percent_pos_x">71.1%</fraction>
+    <fraction name="top_guide_line_landscape">11.600006%</fraction>
+    <fraction name="zoom_group_middle_start">0.0%</fraction>
+    <fraction name="zoom_group_pro_middle_start">16.999996%</fraction>
+</resources>

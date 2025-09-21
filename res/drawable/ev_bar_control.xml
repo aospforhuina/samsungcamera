@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="@dimen/touch_ev_control_icon_size" android:width="@dimen/touch_ev_control_icon_size" android:drawable="@drawable/ev_bar_control_selector" />
+</layer-list>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:selectableItemBackground" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/watermark_checkbox_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/checkbox" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/winset_list_item_start_padding" android:layout_alignParentStart="true" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/winset_list_item_margin" android:layout_marginRight="@dimen/winset_list_item_margin" android:layout_marginStart="@dimen/winset_list_checked_text_view_width" android:layout_marginEnd="@dimen/winset_list_item_end_padding">
+        <TextView android:textAppearance="?textAppearanceListItem" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:textAlignment="viewStart" android:layout_alignParentStart="true" />
+        <LinearLayout android:id="@id/custom_text_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+            <Button android:textAppearance="@style/RobotoMedium" android:textSize="@dimen/watermark_edit_button_text_size" android:textColor="@color/watermark_edit_button_text_color" android:layout_gravity="center_vertical" android:id="@id/custom_text_input" android:background="@drawable/watermark_edit_button_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/watermark_edit_button_width" android:minHeight="@dimen/watermark_edit_button_height" android:text="@string/watermark_edit_button_title" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$avd_ico_quick_setting_ratio_34_916__10" android:duration="319" android:valueFrom="95.99611" android:valueTo="131.9961" android:propertyName="translateY" />
+    </set>
+</set>

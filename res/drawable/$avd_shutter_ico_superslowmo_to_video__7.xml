@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="200" android:valueFrom="M 0 11 C 6.075 11 11 6.075 11 0 C 11 -6.075 6.075 -11 0 -11 C -6.075 -11 -11 -6.075 -11 0 C -11 6.075 -6.075 11 0 11 Z" android:valueTo="M 0 12 C 6.627 12 12 6.627 12 0 C 12 -6.627 6.627 -12 0 -12 C -6.628 -12 -12 -6.627 -12 0 C -12 6.627 -6.628 12 0 12 Z" android:valueType="pathType" android:propertyName="pathData" />
+        <objectAnimator android:duration="16" android:valueFrom="M 0 12 C 6.627 12 12 6.627 12 0 C 12 -6.627 6.627 -12 0 -12 C -6.628 -12 -12 -6.627 -12 0 C -12 6.627 -6.628 12 0 12 Z" android:valueTo="M 0 12 C 6.627 12 12 6.627 12 0 C 12 -6.627 6.627 -12 0 -12 C -6.628 -12 -12 -6.627 -12 0 C -12 6.627 -6.628 12 0 12 Z" android:valueType="pathType" android:propertyName="pathData" />
+    </set>
+</set>

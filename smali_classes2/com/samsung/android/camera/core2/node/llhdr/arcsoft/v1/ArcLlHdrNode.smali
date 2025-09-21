@@ -1,0 +1,233 @@
+.class public Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/v1/ArcLlHdrNode;
+.super Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/ArcLlHdrNodeBase;
+.source "ArcLlHdrNode.java"
+
+
+# static fields
+.field private static final ARC_LL_HDR_V1_TAG:Lcom/samsung/android/camera/core2/util/CLog$Tag;
+
+.field private static final NATIVE_COMMAND_SET_REF_FRAME_INDEX:Lcom/samsung/android/camera/core2/node/NativeNode$Command;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/samsung/android/camera/core2/node/NativeNode$Command<",
+            "Ljava/lang/Void;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    .line 1
+    new-instance v0, Lcom/samsung/android/camera/core2/util/CLog$Tag;
+
+    const-string v1, "V1/ArcLlHdrNode"
+
+    invoke-direct {v0, v1}, Lcom/samsung/android/camera/core2/util/CLog$Tag;-><init>(Ljava/lang/String;)V
+
+    sput-object v0, Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/v1/ArcLlHdrNode;->ARC_LL_HDR_V1_TAG:Lcom/samsung/android/camera/core2/util/CLog$Tag;
+
+    .line 2
+    new-instance v0, Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/v1/ArcLlHdrNode$1;
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Ljava/lang/Class;
+
+    const/4 v2, 0x0
+
+    const-class v3, Ljava/lang/Integer;
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x6b
+
+    invoke-direct {v0, v2, v1}, Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/v1/ArcLlHdrNode$1;-><init>(I[Ljava/lang/Class;)V
+
+    sput-object v0, Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/v1/ArcLlHdrNode;->NATIVE_COMMAND_SET_REF_FRAME_INDEX:Lcom/samsung/android/camera/core2/node/NativeNode$Command;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/samsung/android/camera/core2/node/MultiFrameNodeBase$MultiFrameInitParam;Lcom/samsung/android/camera/core2/node/llhdr/LlHdrNodeBase$NodeCallback;)V
+    .locals 2
+
+    sget-object v0, Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/v1/ArcLlHdrNode;->ARC_LL_HDR_V1_TAG:Lcom/samsung/android/camera/core2/util/CLog$Tag;
+
+    const v1, 0x10c944
+
+    invoke-direct {p0, v1, v0, p1, p2}, Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/ArcLlHdrNodeBase;-><init>(ILcom/samsung/android/camera/core2/util/CLog$Tag;Lcom/samsung/android/camera/core2/node/MultiFrameNodeBase$MultiFrameInitParam;Lcom/samsung/android/camera/core2/node/llhdr/LlHdrNodeBase$NodeCallback;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected nativeCallCommandInit()V
+    .locals 4
+
+    sget-object v0, Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/ArcLlHdrNodeBase;->NATIVE_COMMAND_INIT:Lcom/samsung/android/camera/core2/node/NativeNode$Command;
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    iget v2, p0, Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/ArcLlHdrNodeBase;->mLensFacing:I
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
+
+    invoke-virtual {p0, v0, v1}, Lcom/samsung/android/camera/core2/node/Node;->nativeCall(Lcom/samsung/android/camera/core2/node/NativeNode$Command;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method protected nativeCallSpecificCommand(Landroid/hardware/camera2/TotalCaptureResult;)V
+    .locals 4
+
+    .line 1
+    invoke-virtual {p0}, Lcom/samsung/android/camera/core2/node/MultiFrameNodeBase;->getCurrentCount()I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_1
+
+    .line 2
+    sget-object v0, Lcom/samsung/android/camera/core2/local/vendorkey/SemCaptureResult;->V0:Landroid/hardware/camera2/CaptureResult$Key;
+
+    invoke-static {p1, v0}, Lcom/samsung/android/camera/core2/local/vendorkey/SemCaptureResult;->a(Landroid/hardware/camera2/CaptureResult;Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_0
+
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    iput p1, p0, Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/ArcLlHdrNodeBase;->mRefFrameIndex:I
+
+    .line 4
+    invoke-virtual {p0}, Lcom/samsung/android/camera/core2/node/Node;->getNodeTag()Lcom/samsung/android/camera/core2/util/CLog$Tag;
+
+    move-result-object p1
+
+    new-array v2, v1, [Ljava/lang/Object;
+
+    iget v3, p0, Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/ArcLlHdrNodeBase;->mRefFrameIndex:I
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    aput-object v3, v2, v0
+
+    const-string v3, "nativeCallSpecificCommand: RefFrameIndex = %d"
+
+    invoke-static {p1, v3, v2}, Lcom/samsung/android/camera/core2/util/CLog;->j(Lcom/samsung/android/camera/core2/util/CLog$Tag;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 5
+    sget-object p1, Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/v1/ArcLlHdrNode;->NATIVE_COMMAND_SET_REF_FRAME_INDEX:Lcom/samsung/android/camera/core2/node/NativeNode$Command;
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    iget v2, p0, Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/ArcLlHdrNodeBase;->mRefFrameIndex:I
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    aput-object v2, v1, v0
+
+    invoke-virtual {p0, p1, v1}, Lcom/samsung/android/camera/core2/node/Node;->nativeCall(Lcom/samsung/android/camera/core2/node/NativeNode$Command;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    iput v0, p0, Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/ArcLlHdrNodeBase;->mRefFrameIndex:I
+
+    .line 7
+    sget-object p1, Lcom/samsung/android/camera/core2/node/llhdr/arcsoft/v1/ArcLlHdrNode;->NATIVE_COMMAND_SET_REF_FRAME_INDEX:Lcom/samsung/android/camera/core2/node/NativeNode$Command;
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const/4 v2, -0x1
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    aput-object v2, v1, v0
+
+    invoke-virtual {p0, p1, v1}, Lcom/samsung/android/camera/core2/node/Node;->nativeCall(Lcom/samsung/android/camera/core2/node/NativeNode$Command;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method public bridge synthetic processPictureHeic(Lcom/samsung/android/camera/core2/util/ImageBuffer;Lcom/samsung/android/camera/core2/ExtraBundle;)Lcom/samsung/android/camera/core2/util/ImageBuffer;
+    .locals 0
+
+    invoke-super {p0, p1, p2}, Lcom/samsung/android/camera/core2/node/PictureFormatProcessableInterface;->processPictureHeic(Lcom/samsung/android/camera/core2/util/ImageBuffer;Lcom/samsung/android/camera/core2/ExtraBundle;)Lcom/samsung/android/camera/core2/util/ImageBuffer;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic processPictureJpeg(Lcom/samsung/android/camera/core2/util/ImageBuffer;Lcom/samsung/android/camera/core2/ExtraBundle;)Lcom/samsung/android/camera/core2/util/ImageBuffer;
+    .locals 0
+
+    invoke-super {p0, p1, p2}, Lcom/samsung/android/camera/core2/node/PictureFormatProcessableInterface;->processPictureJpeg(Lcom/samsung/android/camera/core2/util/ImageBuffer;Lcom/samsung/android/camera/core2/ExtraBundle;)Lcom/samsung/android/camera/core2/util/ImageBuffer;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic processPictureRaw(Lcom/samsung/android/camera/core2/util/ImageBuffer;Lcom/samsung/android/camera/core2/ExtraBundle;)Lcom/samsung/android/camera/core2/util/ImageBuffer;
+    .locals 0
+
+    invoke-super {p0, p1, p2}, Lcom/samsung/android/camera/core2/node/PictureFormatProcessableInterface;->processPictureRaw(Lcom/samsung/android/camera/core2/util/ImageBuffer;Lcom/samsung/android/camera/core2/ExtraBundle;)Lcom/samsung/android/camera/core2/util/ImageBuffer;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic processPictureRecovery(Lcom/samsung/android/camera/core2/util/ImageBuffer;Lcom/samsung/android/camera/core2/ExtraBundle;)Lcom/samsung/android/camera/core2/util/ImageBuffer;
+    .locals 0
+
+    invoke-super {p0, p1, p2}, Lcom/samsung/android/camera/core2/node/PictureFormatProcessableInterface;->processPictureRecovery(Lcom/samsung/android/camera/core2/util/ImageBuffer;Lcom/samsung/android/camera/core2/ExtraBundle;)Lcom/samsung/android/camera/core2/util/ImageBuffer;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic processPictureRgba(Lcom/samsung/android/camera/core2/util/ImageBuffer;Lcom/samsung/android/camera/core2/ExtraBundle;)Lcom/samsung/android/camera/core2/util/ImageBuffer;
+    .locals 0
+
+    invoke-super {p0, p1, p2}, Lcom/samsung/android/camera/core2/node/PictureFormatProcessableInterface;->processPictureRgba(Lcom/samsung/android/camera/core2/util/ImageBuffer;Lcom/samsung/android/camera/core2/ExtraBundle;)Lcom/samsung/android/camera/core2/util/ImageBuffer;
+
+    move-result-object p0
+
+    return-object p0
+.end method

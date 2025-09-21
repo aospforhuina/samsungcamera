@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/help_guide_text_layout" android:layout_width="0.0dip" android:layout_height="@dimen/my_filter_help_guide_text_layout_height" android:layout_marginTop="@dimen/my_filter_help_guide_text_layout_landscape_margin_top" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/my_filter_help_guide_text_size" android:textColor="@color/my_filter_help_guide_text_color" android:id="@id/help_guide_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_filter_help_guide_description" android:maxLines="2" android:textAlignment="center" style="@style/RobotoMedium" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/crop_root_layout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/help_guide_text_layout">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/crop_image_view_layout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/my_filter_layout_horizontal_margin">
+            <com.sec.android.app.camera.cropper.view.MyFilterImageView android:id="@id/crop_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/button_group" android:layout_width="wrap_content" android:layout_height="@dimen/my_filter_button_height" android:layout_marginTop="@dimen/my_filter_button_landscape_top_margin" android:layout_marginEnd="@dimen/my_filter_button_landscape_end_margin" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <Button android:id="@id/btn_cancel" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" style="@style/MyFilterButtonStyle" />
+        <Button android:id="@id/btn_done" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/done" style="@style/MyFilterButtonStyle" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/bottom_guideline" android:layout_width="wrap_content" android:layout_height="0.0dip" app:layout_constraintGuide_percent="0.71" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/top_guideline" android:layout_width="wrap_content" android:layout_height="0.0dip" app:layout_constraintGuide_percent="0.11" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/quick_setting_guideline" android:layout_width="wrap_content" android:layout_height="0.0dip" app:layout_constraintGuide_percent="0.105" />
+</androidx.constraintlayout.widget.ConstraintLayout>

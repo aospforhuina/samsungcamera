@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/menu_manual_color_tune_menu_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/bottom_guideline" android:layout_width="wrap_content" android:layout_height="0.0dip" app:layout_constraintGuide_percent="@integer/bottom_guideline_percent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/color_tune_group_height" android:translationY="@dimen/color_tune_slider_height" app:layout_constraintBottom_toTopOf="@id/bottom_guideline" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/color_tune_panel" android:layout_width="fill_parent" android:layout_height="@dimen/pro_item_group_height" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <com.sec.android.app.camera.widget.ExpandableSlider android:id="@id/seekbar_contrast" android:visibility="gone" android:clipChildren="false" android:layout_width="@dimen/color_tune_slider_width" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+        <com.sec.android.app.camera.widget.ExpandableSlider android:id="@id/seekbar_highlight" android:visibility="gone" android:clipChildren="false" android:layout_width="@dimen/color_tune_slider_width" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+        <com.sec.android.app.camera.widget.ExpandableSlider android:id="@id/seekbar_shadows" android:visibility="gone" android:clipChildren="false" android:layout_width="@dimen/color_tune_slider_width" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+        <com.sec.android.app.camera.widget.ExpandableSlider android:id="@id/seekbar_saturation" android:visibility="gone" android:clipChildren="false" android:layout_width="@dimen/color_tune_slider_width" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+        <com.sec.android.app.camera.widget.ExpandableSlider android:id="@id/seekbar_tint" android:visibility="gone" android:clipChildren="false" android:layout_width="@dimen/color_tune_slider_width" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+        <com.sec.android.app.camera.widget.ExpandableSlider android:id="@id/seekbar_temperature" android:visibility="gone" android:clipChildren="false" android:layout_width="@dimen/color_tune_slider_width" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+.class public interface abstract Lh2/b;
+.super Ljava/lang/Object;
+.source "ShadowViewDelegate.java"
+
+
+# virtual methods
+.method public abstract a()Z
+.end method
+
+.method public abstract setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+.end method
+
+.method public abstract setShadowPadding(IIII)V
+.end method

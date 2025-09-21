@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="about_page_button_bg_color">#ff1f1f1f</color>
+    <color name="about_page_msg_popup_text_color">#fffafafa</color>
+    <color name="appbar_navigation_button_color">#fffafafa</color>
+    <color name="dialog_reset_button_text_color">#fff76f68</color>
+    <color name="divider_color">#ff3a3a3a</color>
+    <color name="fun_lens_popup_discover_more_button">#ff3e91ff</color>
+    <color name="gps_dialog_description_color">#ffe0e0e0</color>
+    <color name="gps_dialog_learn_more_color">#ff578fff</color>
+    <color name="open_source_license_background_color">#ff000000</color>
+    <color name="open_source_license_text_color">#fffafafa</color>
+    <color name="permission_item_description_text_color">#ffe5e5e5</color>
+    <color name="permission_item_name_description_text_color">#ff999999</color>
+    <color name="permission_item_name_text_color">#fffafafa</color>
+    <color name="permission_sub_title_text_color">#ffe5e5e5</color>
+    <color name="permissions_page_background_color">@color/theme_bg_color</color>
+    <color name="qrcode_popup_background_color">#ff252525</color>
+    <color name="qrcode_popup_description_text_color">#ffe5e5e5</color>
+    <color name="qrcode_popup_list_view_text_color">#fffafafa</color>
+    <color name="qrcode_popup_title_text_color">#fffafafa</color>
+    <color name="sesl_fragment_bgcolor">#ff171717</color>
+    <color name="sesl_fragment_fgcolor">#ff010101</color>
+    <color name="sesl_text_input_layout_hint_text_color">#ff999999</color>
+    <color name="setting_description_text_color">@color/sesl_dialog_body_text_color_dark</color>
+    <color name="spinner_contents_text_default_color">@color/default_white_color</color>
+    <color name="swipe_shutter_button_to_animation_layout_background_color">#ff171717</color>
+    <color name="theme_appbar_color">#ff010101</color>
+    <color name="theme_bg_color">#ff010101</color>
+    <color name="theme_list_color">#ff171717</color>
+    <color name="theme_title_color">#fffafafa</color>
+    <color name="watermark_edit_button_background_color">#ff2d2d2d</color>
+    <color name="watermark_edit_button_text_color">#fffafafa</color>
+</resources>

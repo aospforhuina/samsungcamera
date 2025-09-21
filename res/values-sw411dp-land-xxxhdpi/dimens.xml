@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="create_my_filter_name_top_margin">105.0dip</dimen>
+    <dimen name="qrcode_popup_width">447.5dip</dimen>
+    <dimen name="single_take_customized_option_menu_horizontal_padding">60.5dip</dimen>
+    <dimen name="single_take_customized_option_menu_item_text_area_width">169.0dip</dimen>
+    <dimen name="single_take_customized_option_menu_list_bottom_margin">34.19998dip</dimen>
+    <dimen name="single_take_customized_option_menu_list_height">180.4dip</dimen>
+    <dimen name="single_take_customized_option_menu_title_bottom_margin">18.299988dip</dimen>
+    <dimen name="single_take_customized_option_menu_top_padding">41.099976dip</dimen>
+</resources>

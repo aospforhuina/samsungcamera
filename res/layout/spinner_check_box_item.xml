@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="?android:selectableItemBackground" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/watermark_checkbox_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/checkbox" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/watermark_check_box_start_margin" android:layout_alignParentStart="true" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/winset_list_item_margin" android:layout_marginRight="@dimen/winset_list_item_margin" android:layout_centerVertical="true" android:layout_marginStart="@dimen/winset_list_checked_text_view_width" android:layout_marginEnd="@dimen/winset_list_item_end_padding">
+        <TextView android:textAppearance="?textAppearanceListItem" android:id="@id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/spinner_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+            <TextView android:textAppearance="@style/RobotoMedium" android:textSize="@dimen/watermark_edit_date_text_size" android:textColor="@color/watermark_date_time_list_color" android:id="@id/date_time_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" android:layout_marginEnd="@dimen/watermark_date_time_text_margin_end" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/action_arrow_spinner_layout" android:background="@drawable/camera_watermark_spinner" android:layout_width="@dimen/watermark_spinner_icon_size" android:layout_height="@dimen/watermark_spinner_icon_size">
+                <androidx.appcompat.widget.AppCompatSpinner android:id="@id/spinner" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:spinnerMode="dropdown" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

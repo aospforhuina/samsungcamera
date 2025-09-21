@@ -1,0 +1,64 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: SamsungCamera.apk
+compressionType: false
+doNotCompress:
+- classes.dex
+- resources.arsc
+- png
+- jpg
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- lib/arm64-v8a/libBlinkDetection.so
+- lib/arm64-v8a/libDiagMonKey.so
+- lib/arm64-v8a/libEventFinderResultConverter.camera.samsung.so
+- lib/arm64-v8a/libPanoramaInterface_arcsoft.so
+- lib/arm64-v8a/libSaitRelightingInterface2.so
+- lib/arm64-v8a/libSceneDetectorJNI.so
+- lib/arm64-v8a/libarcore_sdk_c.so
+- lib/arm64-v8a/libarcore_sdk_jni.so
+- lib/arm64-v8a/libatomjpeg_panorama_enc.quram.so
+- lib/arm64-v8a/libc++_shared.so
+- lib/arm64-v8a/libcamera_effect_processor_jni.so
+- lib/arm64-v8a/libdirectbuffer-jni.so
+- lib/arm64-v8a/libhandgesture.arcsoft.so
+- lib/arm64-v8a/libimageutils-jni.so
+- lib/arm64-v8a/libimagexmpinjector.so
+- lib/arm64-v8a/libmpbase.so
+- lib/arm64-v8a/libnativeutils-jni.so
+- lib/arm64-v8a/libnode-jni.so
+- lib/arm64-v8a/libpanorama.arcsoft.so
+- lib/arm64-v8a/librenderscript-toolkit.so
+- lib/arm64-v8a/librm_rapidmoments_jni_a.so
+- webp
+- ogg
+- res/drawable/ic_stamp_ic_samsung_triple_landscape_camera.bmp
+- res/raw/keep.xml
+- res/raw/keep_arcore.xml
+- res/raw/lottie_mode_edit_overlay_help_tablet.json
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '33'
+  targetSdkVersion: '33'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  DebugProbesKt.bin: '8'
+  jacoco-agent.properties: '8'
+  play-services-base.properties: '8'
+  play-services-basement.properties: '8'
+  play-services-location.properties: '8'
+  play-services-tasks.properties: '8'
+  SEC-INF/buildConfirm.crt: '8'
+  SEC-INF/buildinfo.xml: '8'
+  com/google/zxing/META-INF/MANIFEST.MF: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.7.0-dirty
+versionInfo:
+  versionCode: '1310101100'
+  versionName: 13.1.01.1

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@drawable/default_focused_selector" />
+    <item>
+        <shape android:shape="oval">
+            <size android:height="@dimen/base_menu_center_button_resizable_size" android:width="@dimen/base_menu_center_button_resizable_size" />
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="@dimen/base_menu_center_button_stroke_resizable" android:color="@color/base_menu_center_button_color" />
+        </shape>
+    </item>
+</selector>
